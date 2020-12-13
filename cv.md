@@ -14,7 +14,7 @@ It's interesting and make me feel positive, when I learning Front-end developmen
 ## Education
 
 <br>I studied at The University of Civil Protection of the Ministry for Emergency Situations of the Republic of Belarus at 4 years and gratuated from there at 2018 year.<br>
-But now, i am educate at the Epam courses called Upskill lab, using Github and Hexlet platform to became a junior programmer.<br><br>
+But now, i am educate at the Epam courses called Upskill lab, using Github and Hexlet platform to became a junior programmer at front-end development.<br><br>
 
 ## Skills
 
@@ -30,7 +30,7 @@ But now, i am educate at the Epam courses called Upskill lab, using Github and H
 ## English
 
 I know some things about English, but my skills still on low level, so i use _[\*cool site\*](https://www.duolingo.com/learn)_ to improve my language.<br>
-Sometimes I tried to watch video with subtitles, but it's still difficult.
+Sometimes I tried to watch video with subtitles, but it's still difficult for me. 
 
 ## Example of my code:
 
