@@ -3,7 +3,7 @@
 ## About myself
 
 My name is Vlad, I am 24 y.o. I start interesting in Web-development at the October 2020. Programming is a cool and progressive direction in future.<br>
-It's interesting and make me feel positive, when I learning Front-end development and I like learning new things from everywhere. <br><br>
+It's interesting and make me feel positive, when I learn Front-end development and I like learning new things from everywhere. <br><br>
 
 ### _My goals **and** wishes:_ <br><br>
 
@@ -14,11 +14,11 @@ It's interesting and make me feel positive, when I learning Front-end developmen
 ## Education
 
 <br>I studied at The University of Civil Protection of the Ministry for Emergency Situations of the Republic of Belarus at 4 years and gratuated from there at 2018 year.<br>
-But now, i am educate at the Epam courses called Upskill lab, using Github and Hexlet platform to became a junior programmer at front-end development.<br><br>
+But now, I study at the Epam courses called Upskill lab, using Github and Hexlet platform to became a junior front-end developer.<br><br>
 
 ## Skills
 
----
+---git
 
 - HTML
 - CSS
