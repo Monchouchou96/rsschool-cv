@@ -1,24 +1,14 @@
 * {
-  text-align: center;
   background-color: rgb(240, 240, 240);
   font-family: Arial, Futura, sans-serif;
-}
-
-header,
-main {
-  
-}
-
-aside {
-  border-left: 15px solid black;
+  text-align: center;
 }
 
 footer {
   background-color: rgb(9, 152, 177, 0.3);
-  border-bottom: 5px solid;
-  font: italic 30px/40px Tahoma, sans-serif;
+  font: italic 20px/30px Tahoma, sans-serif;
   text-align: center;
-  color: rgba(0, 0, 0, 0.7);
+  
 }
 
 h1 {
