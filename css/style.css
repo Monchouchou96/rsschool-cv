@@ -1,36 +1,30 @@
-header > h1, h2 {
-  text-align: center;
-  
-}
-
 .photo {
   margin: 10px 30px 10px 10px;
   border: 5px solid rgb(25, 109, 158);
   border-radius: 150px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 p {
   font: italic small-caps bold 16px/24px sans-serif;
-  
 }
 
-
-
 h1 {
-  border: 3px solid rgb(84, 84, 131);
+  border: 5px solid rgb(84, 84, 131);
   border-radius: 20px;
-  background-color: rgb(122, 189, 252);
   padding: 10px;
-  margin: 5px 600px 5px 600px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgb(55, 143, 224);
   letter-spacing: 15px;
-
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
   padding: 10px;
-  
-  
+  display: flex;
+  justify-content: center;
 }
 
 h3 {
@@ -38,19 +32,18 @@ h3 {
   font-size: 25px;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-image: url(/images/accept.jpg);
 }
 .flexone {
   display: flex;
   justify-content: center;
-  
 }
 
 .flextwo {
   display: flex;
   justify-content: center;
-  
 }
 
 .flexthree {
@@ -62,44 +55,99 @@ ul, ol {
 
 .About {
   margin: 10px 20px 20px 30px;
-  
 }
 
 .Goals {
   background-color: rgb(55, 143, 224);
   border: 5px solid rgb(84, 84, 131);
   border-radius: 50px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 20px 100px 30px 80px;
-  padding: 10px 
-
+  padding: 10px;
 }
 
 .Skills {
   background-color: rgb(55, 143, 224);
   border: 5px solid rgb(84, 84, 131);
   border-radius: 50px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 20px 100px 30px 80px;
-  padding: 10px 
+  padding: 10px;
 }
 
 .Education {
   border-radius: 70px;
   margin-top: 20px;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
 .English {
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   padding: 20px;
   text-align: right;
 }
 
-
 footer {
   text-align: center;
 }
+
+@media screen and (max-width: 450px) {
+  .flexone {
+    display: block;
+  }
+
+  .flextwo {
+    display: block;
+  }
+
+  .flexthree {
+    display: block;
+  }
+  .photo {
+    margin: 10px 80px 10px 80px;
+    border: 5px solid rgb(25, 109, 158);
+    border-radius: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .flexone {
+    display: block;
+  }
+
+  .flextwo {
+    display: block;
+  }
+
+  .flexthree {
+    display: block;
+  }
+  .photo {
+    margin: 10px 50px 10px 50px;
+    border-radius: 150px;
+  }
+
+  .Goals {
+    margin: 10%;
+    padding: 10px;
+  }
+
+  .Skills {
+    margin: 10%;
+    padding: 10px;
+  }
+
+  h1 {
+    margin: 5%;
+  }
+  
+  .photo {
+    margin-left: 20%;
+  }
+}
+
+
