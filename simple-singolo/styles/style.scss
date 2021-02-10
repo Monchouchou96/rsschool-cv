@@ -5,6 +5,7 @@ header {
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 .arrow-left {
@@ -37,6 +38,16 @@ main {
 h1 {
 }
 
-#star {
+#red_symbol {
   color: $bgcolor;
+}
+circle {
+    border: 2px solid #666D89;
+    border-radius: 60px/60px;
+    padding:20px;
+    
+}
+
+img{
+    margin-left:100px;
 }

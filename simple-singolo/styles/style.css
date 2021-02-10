@@ -20,8 +20,18 @@ body {
   transform: rotate(45deg);
 }
 
-#star {
+#red_symbol {
   color: #f06c64;
+}
+
+circle {
+  border: 2px solid #666D89;
+  border-radius: 60px/60px;
+  padding: 20px;
+}
+
+img {
+  margin-left: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
