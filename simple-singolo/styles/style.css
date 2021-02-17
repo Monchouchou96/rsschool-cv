@@ -1,12 +1,16 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 header {
   width: 100%;
   background-color: #2d303a;
+}
+
+header-content {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -28,20 +32,21 @@ h1 {
   color: #f06c64;
 }
 
-nav {
-  text-transform: uppercase;
-  margin: 100px;
+ul {
+  margin-top: 30px;
 }
 
 li {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 10px;
-  align-items: center;
+  display: list-item;
+}
+
+nav {
+  text-transform: uppercase;
+  width: 600px;
 }
 
 li + li::before {
-  content: "♥";
+  content: "\25CB";
   padding: 15px;
 }
 
@@ -57,28 +62,13 @@ li > .link:hover {
 
 body {
   margin: 0;
-}
-
-.arrow-left {
-  width: 60px;
-  height: 60px;
-  border-top: 10px solid #6e18c0;
-  border-right: 10px solid #6e18c0;
-  margin-right: 60px;
-  transform: rotate(-135deg);
-}
-
-.arrow-right {
-  width: 60px;
-  height: 60px;
-  border-top: 10px solid #6e18c0;
-  border-right: 10px solid #6e18c0;
-  margin-right: 60px;
-  transform: rotate(45deg);
+  
 }
 
 .phones {
   background: #f06c64;
+  display: flex;
+  justify-content: space-between;
 }
 
 .phone-pictures {
@@ -99,9 +89,40 @@ body {
   border-bottom: 50px solid #f2f2f2;
   border-radius: 5%;
   box-shadow: 20px 20px 2px 3px rgba(94, 80, 80, 0.5);
+  position: relative;
   margin-top: 50px;
   margin-right: 60px;
   margin-bottom: 50px;
+}
+
+.vector {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background: grey;
+  border-radius: 5px;
+  top: -20px;
+  left: 85px;
+}
+
+.circuit {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #eb5055;
+  border-radius: 50px;
+  border: 2px solid grey;
+  top: -40px;
+  left: 95px;
+}
+
+.button {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 2px solid gray;
+  top: 350px;
+  left: 85px;
 }
 
 .right-side-picture {
@@ -112,90 +133,65 @@ body {
   border-bottom: 15px solid #f2f2f2;
   border-radius: 5%;
   box-shadow: 20px 15px 2px 5px rgba(94, 80, 80, 0.5);
+  position: relative;
   height: 185px;
   margin-top: 150px;
   margin-left: 60px;
   margin-bottom: 50px;
 }
-
-.button {
-  height: 15px;
-  width: 15px;
-  border: 2px solid grey;
-  position: absolute;
-  top: 650px;
-  left: 100px;
-}
-
-.button-2 {
-  height: 15px;
-  width: 15px;
-  border: 2px solid grey;
-  position: absolute;
-  top: 615px;
-  right: 100px;
-}
-
-.vector {
-  position: absolute;
-  width: 30px;
-  height: 5px;
-  background: red;
-  border-radius: 5px;
-}
-
 .vector-2 {
-  position: absolute;
   width: 5px;
   height: 30px;
-  background: red;
+  background: grey;
   border-radius: 5px;
-}
-
-.band {
   position: absolute;
-  width: 35px;
-  height: 35px;
-  background: white;
-  border-radius: 50px;
-}
-
-.band-2 {
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  background: white;
-  border-radius: 50px;
-}
-
-.circuit {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background: #EB5055;
-  border-radius: 50px;
-  border: 2px solid grey;
+  top: 75px;
+  right: -20px;
 }
 
 .circuit-2 {
-  position: absolute;
   width: 5px;
   height: 5px;
-  background: #EB5055;
+  background: #eb5055;
   border-radius: 50px;
   border: 2px solid grey;
+  position: absolute;
+  top: 85px;
+  right: -40px;
 }
 
-.circle {
-  border: 1px solid #000;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  padding: 6%;
+.button-2 {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 2px solid gray;
+  position: absolute;
+  top: 80px;
+  left: -30px;
+}
+
+.left-arrow {
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #e94348;
+  border-right: 5px solid #e94348;
+  margin-left: 60px;
+  margin-top: 250px;
+  transform: rotate(-135deg);
+}
+.right-arrow {
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #e94348;
+  border-right: 5px solid #e94348;
+  margin-right: 60px;
+  transform: rotate(45deg);
+  margin-top: 250px;
 }
 
 .services {
   background-color: #f2f2f2;
+  padding-top: 100px;
 }
 
 .services > p {
@@ -207,29 +203,61 @@ body {
   color: #767e9e;
 }
 
+.Our-services {
+  
+  
+}
+
+.text-wrap {
+  width: 250px;
+}
+
+.flex {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  
+}
+
+.flex-two {
+display: flex;
+flex-direction: row-reverse;
+width: 400px;
+}
+
+.text-wrap {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.image-wrap {
+  margin-left: 5px;
+  margin-top: 30px;
+}
+
+.circle {
+  border: 2px solid #666d89;
+  padding: 30px;
+  background-origin: content-box;
+  border-radius: 70%;
+  background-color: white;
+}
+
+
+
 h2 {
   color: #666d89;
+  
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
 }
 
 .grid_2 {
-  display: grid;
-  grid-template-columns: 217px 217px 217px;
-  grid-template-rows: 184px 184px 184px;
-  grid-gap: 20px;
-  justify-content: center;
 }
 
 .portfolio {
-  background-color: #2d303a;
 }
 
 footer {
-  border-top: 1rem solid #323746;
 }
