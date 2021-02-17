@@ -8,26 +8,41 @@
   </head>
   <body>
     <header>
-      <h1>SINGOLO<span id="red">*</span></h1>
+      <div class="logo">
+        <h1>SINGOLO<span id="red_symbol">*</span></h1>
+      </div>
       <!--логотип сайта-->
-      <nav>
+      <nav class="navigation">
         <ul>
-          <li><a href="/">HOME</a></li>
-          <li type="circle"><a href="/services">SERVICES</a></li>
-          <li type="circle"><a href="/portfolio">PORTFOLIO</a></li>
-          <li type="circle"><a href="/about">ABOUT</a></li>
-          <li type="circle"><a href="/contact">CONTACT</a></li>
+          <li><a class="link" href="/">home</a></li>
+          <li><a class="link" href="/services">services</a></li>
+          <li><a class="link" href="/portfolio">portfolio</a></li>
+          <li><a class="link" href="/about">about</a></li>
+          <li><a class="link" href="/contact">contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="phones">
-        <div class="arrow-left"></div>
-        <div class="arrow-right"></div>
-        Здесь будут расположены 2 треугольника, а так же два телефона с тенями,
-        6 векторов (круг, квадрат, полоска).
+      <section class="phones">
+        <div class="phone-pictures">
+          <div class="left-side-picture"> 
+            <div class="vector"></div>
+              <img class="phone-vertical-display" src="styles/images/phone-vertical-display.png" alt="display.png">
+             <div class="button"></div>
+             <div class="band"></div>
+             <div class="circuit"></div>
+           </div>
+          <div class="right-side-picture">
+            <div class="vector-2"></div>
+              <img class="phone-horizontal-display" src="styles/images/phone-horizontal-display.png" alt="display.png">
+            <div class="button-2"></div>
+            <div class="band-2"></div>
+            <div class="circuit-2"></div>
+          </div>
+       </div>
       </section>
-      <section class="Services">
+      <!--FLEX FLEX FLEX FLEX FLEX-->
+      <section class="services">
         <h2>Our Services</h2>
         <p>
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -35,83 +50,141 @@
           lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
           tortor mauris condimentum nibh.
         </p>
-        <div class="design">
-          <h3>Custom design</h3>
-          <img src="styles/images/services-item-1--nocircle.jpg" alt="Design.img" />
-          <p>
-            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
-            laoreet, viverra lacus ut, ultrices velit.
-          </p>
-        </div>
-        <div class="ideas">
-          <h3>Inovative Ideas</h3>
-          <img src="styles/images/services-item-2--nocircle.jpg" alt="Ideas.img" />
-          <p>
-            Quisque luctus, quam eget molestie commodo, lacus purus cursus
-            purus, nec rutrum tellus dolor id lorem.
-          </p>
-        </div>
-        <div class="answer">
-          <h3>Love Is The Answer</h3>
-          <img src="styles/images/services-item-3--nocircle.jpg" alt="Love.img" />
-          <p>
-            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
-            et consequat felis. Quisque condimentum.
-          </p>
-        </div>
-        <div class="layout">
-          <h3>Responsive Layout</h3>
-          <img src="styles/images/services-item-4--nocircle.jpg" alt="Layout.img" />
-          <p>
-            Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit
-            nunc ligula. Praesent elit leo.
-          </p>
-        </div>
-        <div class="support">
-          <h3>24/7 Support</h3>
-          <img src="styles/images/services-item-5--nocircle.jpg" alt="Support.img" />
-          <p>
-            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a
-            sem erat. Pellentesque egestas venenatis lorem.
-          </p>
-        </div>
-        <div class="start">
-          <h3>Feel Like A Star</h3>
-          <img src="styles/images/services-item-6--nocircle.jpg" alt="Star.imggit" />
-          <p>
-            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
-            Fusce vitae aliquam tellus.
-          </p>
-        </div>
+        <section class="grid">
+          <div class="design">
+            <h3>Custom design</h3>
+            <img
+              class="circle"
+              src="styles/images/services-item-1--nocircle.jpg"
+              alt="Design.img"
+              align="left"
+            />
+            <p>
+              Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+              laoreet, viverra lacus ut, ultrices velit.
+            </p>
+          </div>
+          <div class="ideas">
+            <h3>Inovative Ideas</h3>
+            <img
+              class="circle"
+              src="styles/images/services-item-2--nocircle.jpg"
+              alt="Ideas.img"
+              align="left"
+            />
+            <p>
+              Quisque luctus, quam eget molestie commodo, lacus purus cursus
+              purus, nec rutrum tellus dolor id lorem.
+            </p>
+          </div>
+          <div class="answer">
+            <h3>Love Is The Answer</h3>
+            <img
+              class="circle"
+              src="styles/images/services-item-3--nocircle.jpg"
+              alt="Love.img"
+              align="left"
+            />
+            <p>
+              Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+              et consequat felis. Quisque condimentum.
+            </p>
+          </div>
+          <div class="layout">
+            <h3>Responsive Layout</h3>
+            <img
+              class="circle"
+              src="styles/images/services-item-4--nocircle.jpg"
+              alt="Layout.img"
+              align="left"
+            />
+            <p>
+              Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
+              blandit nunc ligula. Praesent elit leo.
+            </p>
+          </div>
+          <div class="support">
+            <h3>24/7 Support</h3>
+            <img
+              class="circle"
+              src="styles/images/services-item-5--nocircle.jpg"
+              alt="Support.img"
+              align="left"
+            />
+            <p>
+              Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla
+              a sem erat. Pellentesque egestas venenatis lorem.
+            </p>
+          </div>
+          <div class="start">
+            <h3>Feel Like A Star</h3>
+            <img
+              class="circle"
+              src="styles/images/services-item-6--nocircle.jpg"
+              alt="Star.imggit"
+              align="left"
+            />
+            <p>
+              Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
+              Fusce vitae aliquam tellus.
+            </p>
+          </div>
+        </section>
       </section>
       <section class="portfolio">
-        <div>
+        <div class="">
+          <h3>Porfolio</h3>
           <p>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
             eget lacinia odio sem nec elit.
           </p>
         </div>
-        <ul>
-          <li>All</li>
-          <li>Web Design</li>
-          <li>Graphic design</li>
-          <li>Artwork</li>
-        </ul>
+        <nav>
+          <a class="link" href="">All</a>
+          <a class="link" href="">Web Design</a>
+          <a class="link" href="">Graphic design</a>
+          <a class="link" href="">Artwork</a>
+        </nav>
       </section>
-      <img src="styles/images/portfolio-1.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-2.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-3.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-4.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-5.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-6.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-7.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-8.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-9.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-10.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-11.png" alt="Porfolio.png" />
-      <img src="styles/images/portfolio-12.png" alt="Porfolio.png" />
+      <section class="grid_2">
+        <div>
+          <img src="styles/images/portfolio-1.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-2.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-3.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-4.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-5.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-6.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-7.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-8.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-9.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-10.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-11.png" alt="Porfolio.png" />
+        </div>
+        <div>
+          <img src="styles/images/portfolio-12.png" alt="Porfolio.png" />
+        </div>
+      </section>
     </main>
-
     <aside></aside>
     <footer>
       <img src="styles/images/description.png" alt="Copyright.png" />

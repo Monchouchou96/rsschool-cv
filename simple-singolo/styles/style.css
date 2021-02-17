@@ -1,3 +1,60 @@
+* {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #2d303a;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  width: 124px;
+  height: 25px;
+  left: 40px;
+  top: 29px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  padding: 29px 856px 35px 40px;
+}
+
+#red_symbol {
+  color: #f06c64;
+}
+
+nav {
+  text-transform: uppercase;
+  margin: 100px;
+}
+
+li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  align-items: center;
+}
+
+li + li::before {
+  content: "♥";
+  padding: 15px;
+}
+
+li > .link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li > .link:hover {
+  color: #f06c64;
+  transition: 0.2s linear;
+}
+
 body {
   margin: 0;
 }
@@ -5,8 +62,8 @@ body {
 .arrow-left {
   width: 60px;
   height: 60px;
-  border-top: 10px solid #6E18C0;
-  border-right: 10px solid #6E18C0;
+  border-top: 10px solid #6e18c0;
+  border-right: 10px solid #6e18c0;
   margin-right: 60px;
   transform: rotate(-135deg);
 }
@@ -14,24 +71,165 @@ body {
 .arrow-right {
   width: 60px;
   height: 60px;
-  border-top: 10px solid #6E18C0;
-  border-right: 10px solid #6E18C0;
+  border-top: 10px solid #6e18c0;
+  border-right: 10px solid #6e18c0;
   margin-right: 60px;
   transform: rotate(45deg);
 }
 
-#red_symbol {
-  color: #f06c64;
+.phones {
+  background: #f06c64;
 }
 
-circle {
-  border: 2px solid #666D89;
-  border-radius: 60px/60px;
-  padding: 20px;
+.phone-pictures {
+  display: flex;
+  justify-content: center;
 }
 
-img {
-  margin-left: 100px;
+.phone-vertical-display,
+.phone-horizontal-display {
+  display: block;
+  border: 3px solid grey;
 }
 
-/*# sourceMappingURL=style.css.map */
+.left-side-picture {
+  border: 15px solid #f2f2f2;
+  border-top: 50px solid #f2f2f2;
+  border-right: 15px solid #f2f2f2;
+  border-bottom: 50px solid #f2f2f2;
+  border-radius: 5%;
+  box-shadow: 20px 20px 2px 3px rgba(94, 80, 80, 0.5);
+  margin-top: 50px;
+  margin-right: 60px;
+  margin-bottom: 50px;
+}
+
+.right-side-picture {
+  border: 15px solid #f2f2f2;
+  border-top: 15px solid #f2f2f2;
+  border-right: 50px solid #f2f2f2;
+  border-left: 50px solid #f2f2f2;
+  border-bottom: 15px solid #f2f2f2;
+  border-radius: 5%;
+  box-shadow: 20px 15px 2px 5px rgba(94, 80, 80, 0.5);
+  height: 185px;
+  margin-top: 150px;
+  margin-left: 60px;
+  margin-bottom: 50px;
+}
+
+.button {
+  height: 15px;
+  width: 15px;
+  border: 2px solid grey;
+  position: absolute;
+  top: 650px;
+  left: 100px;
+}
+
+.button-2 {
+  height: 15px;
+  width: 15px;
+  border: 2px solid grey;
+  position: absolute;
+  top: 615px;
+  right: 100px;
+}
+
+.vector {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background: red;
+  border-radius: 5px;
+}
+
+.vector-2 {
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  background: red;
+  border-radius: 5px;
+}
+
+.band {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 50px;
+}
+
+.band-2 {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 50px;
+}
+
+.circuit {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #EB5055;
+  border-radius: 50px;
+  border: 2px solid grey;
+}
+
+.circuit-2 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #EB5055;
+  border-radius: 50px;
+  border: 2px solid grey;
+}
+
+.circle {
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 6%;
+}
+
+.services {
+  background-color: #f2f2f2;
+}
+
+.services > p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+}
+
+h2 {
+  color: #666d89;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid_2 {
+  display: grid;
+  grid-template-columns: 217px 217px 217px;
+  grid-template-rows: 184px 184px 184px;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.portfolio {
+  background-color: #2d303a;
+}
+
+footer {
+  border-top: 1rem solid #323746;
+}
