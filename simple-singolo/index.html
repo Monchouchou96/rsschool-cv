@@ -8,21 +8,27 @@
   </head>
   <body>
     <header>
+    <div class="header-flex">
       <div class="logo">
         <h1>SINGOLO<span id="red_symbol">*</span></h1>
       </div>
       <nav class="navigation">
-        <ul>
+        <ul type="none">
           <li><a class="link" href="/">home</a></li>
+          <span class="header-circle"></span>
           <li><a class="link" href="/services">services</a></li>
+          <span class="header-circle"></span>
           <li><a class="link" href="/portfolio">portfolio</a></li>
+          <span class="header-circle"></span>
           <li><a class="link" href="/about">about</a></li>
+          <span class="header-circle"></span>
           <li><a class="link" href="/contact">contact</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <main>
-      <section class="phones">
+      <section class="slider">
         <div class="left-arrow"></div>
         <div class="phone-pictures">
           <div class="left-side-picture">
@@ -111,6 +117,8 @@
             />
           </div>
           </div>
+          
+          
 
           <div class="flex-two">
           <div class="text-wrap">
@@ -145,7 +153,7 @@
             />
           </div>
           </div>
-          
+
           <div class="flex-two">
           <div class="text-wrap">
             <h3>Feel Like A Star</h3>
@@ -166,21 +174,20 @@
         </section>
       </section>  
       <section class="portfolio">
-        <div class="">
-          <h3>Porfolio</h3>
+        <div class="portfolio-text">
+          <h2>Porfolio</h2>
           <p>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
             eget lacinia odio sem nec elit.
           </p>
         </div>
-        <nav>
+        <nav class="portfolio-navigation">
           <a class="link" href="">All</a>
           <a class="link" href="">Web Design</a>
           <a class="link" href="">Graphic design</a>
           <a class="link" href="">Artwork</a>
         </nav>
-      </section>
-      <section class="grid_2">
+      <div class="grid">
         <div>
           <img src="styles/images/portfolio-1.png" alt="Porfolio.png" />
         </div>
@@ -188,7 +195,7 @@
           <img src="styles/images/portfolio-2.png" alt="Porfolio.png" />
         </div>
         <div>
-          <img src="styles/images/portfolio-3.png" alt="Porfolio.png" />
+          <img src="styles/images/portfolio-3.png" alt="Porfolio.png" />  
         </div>
         <div>
           <img src="styles/images/portfolio-4.png" alt="Porfolio.png" />
@@ -213,21 +220,26 @@
         </div>
         <div>
           <img src="styles/images/portfolio-11.png" alt="Porfolio.png" />
-        </div>
+        </div
         <div>
           <img src="styles/images/portfolio-12.png" alt="Porfolio.png" />
         </div>
-      </section>
-
-      <img src="https://material.io/resources/icons/?icon=star_outline&style=outline">
+      </div>
+    </section>
+      <hr>
     </main>
-    <aside></aside>
-    <footer>
-      <img src="styles/images/description.png" alt="Copyright.png" />
-      <img src="styles/images/ico-facebook--nocircle.png" alt="Facebook.png" />
-      <img src="styles/images/ico-google-plus--nocircle.png" alt="Google.png" />
-      <img src="styles/images/ico-twitter--nocircle.png" alt="Twitter.png" />
-      <img src="styles/images/ico-linkedin--nocircle (1).png" alt="Inc.Png" />
-    </footer>
+  <footer>
+  <div class="footer-flex">
+    <div id="copyright">
+      <p>&#169; Copyright 2013</p>
+    </div>
+    <div class="footer-icons">
+      <img class="circle-2" src="styles/images/icons8-facebook-f.svg" alt="Facebook.svg" />
+      <img class="circle-2" src="styles/images/icons8-google-old.svg" alt="Google.svg" />
+      <img class="circle-2" src="styles/images/icons8-twitter.svg" alt="Twitter.svg" />
+      <img class="circle-2" src="styles/images/icons8-linkedin-2.svg" alt="Inc.svg" />
+    </div>
+  </div>
+  </footer>
   </body>
 </html>
