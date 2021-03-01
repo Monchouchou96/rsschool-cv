@@ -8,7 +8,26 @@
   </head>
   <body>
     <header>
-    <div class="header-flex">
+    <div class="header-flex"> 
+      <div id="mySidenav" class="sidenav">
+        <h1>SINGOLO<span id="red_symbol">*</span></h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Porfolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <span id="lines" onclick="openNav()"></span>
+      <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
       <div class="logo">
         <h1>SINGOLO<span id="red_symbol">*</span></h1>
       </div>
@@ -56,6 +75,7 @@
       </section>
       <!--FLEX FLEX FLEX FLEX FLEX-->
       <section class="services">
+        <div class="flex-box">
         <div class="Our-services">
         <h2>Our Services</h2>
         <p>
@@ -118,8 +138,6 @@
           </div>
           </div>
           
-          
-
           <div class="flex-two">
           <div class="text-wrap">
             <h3>Responsive Layout</h3>
@@ -170,6 +188,7 @@
             />
           </div>
           </div>
+        </div>
         </div>
         </section>
       </section>  
