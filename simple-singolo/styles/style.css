@@ -9,27 +9,27 @@ header {
   padding-bottom: 30px;
 }
 
-#lines{ 
+#lines {
   display: none;
-  border-bottom: 10px double white; 
-  border-top: 3px solid white; 
-  content:"";
-  height: 5px; 
-  width:20px;
+  border-bottom: 10px double white;
+  border-top: 3px solid white;
+  content: "";
+  height: 5px;
+  width: 20px;
   margin-left: 10px;
 }
 
 .sidenav {
   height: 100%;
-  width: 0; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  background-color: #2D303A; 
-  overflow-x: hidden; 
-  padding-top: 20px; 
-  transition: 0.5s; 
+  background-color: #2d303a;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.5s;
 }
 
 .sidenav a {
@@ -624,13 +624,13 @@ footer {
     width: 320px;
   }
 
-  #lines{ 
+  #lines {
     display: flex;
-    border-bottom: 10px double white; 
-    border-top: 3px solid white; 
-    content:"";
-    height: 5px; 
-    width:20px;
+    border-bottom: 10px double white;
+    border-top: 3px solid white;
+    content: "";
+    height: 5px;
+    width: 20px;
     margin-left: 10px;
   }
 
@@ -642,14 +642,12 @@ footer {
     background: #f06c64;
     display: flex;
     justify-content: space-between;
-
   }
 
   .phone-pictures {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     margin-left: px;
-    
   }
 
   .phone-vertical-display {
@@ -793,7 +791,7 @@ footer {
   #copyright {
     display: none;
   }
-  
+
   .footer-icons {
     margin-left: 70px;
   }
